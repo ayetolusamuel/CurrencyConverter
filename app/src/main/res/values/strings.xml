@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="hinttext">The main function of this program is to Convert dollar to Naira base on "$1 = 360.50" !!!!</string>
+</resources>
