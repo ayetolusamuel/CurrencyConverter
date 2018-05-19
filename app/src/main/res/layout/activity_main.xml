@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:hint="enter $ to be converted to ₦ !!!!"
         android:textColorHint="@color/white"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textStyle="bold|italic"
         android:textColor="@color/white"
         android:textSize="15sp" />

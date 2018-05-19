@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
     private static final double NAIRA_CONVERSION_RATE = 360.50;
     private EditText amountToBeConverted;
@@ -22,7 +24,10 @@ String amountValue = amountToBeConverted.getText().toString();
 if (amountValue.length()!= 0){
     double amountValueInDouble  = Double.parseDouble(amountValue);
     double result = amountValueInDouble*NAIRA_CONVERSION_RATE;
+    DecimalFormat df = new DecimalFormat("#.##");   //2dp format
+    result = Double.valueOf(df.format(result));
     resultTextView.setText("₦"+String.valueOf(result));
+   Toast.makeText(this, ""+"₦"+String.valueOf(result), Toast.LENGTH_SHORT).show();
 
 }
 else{
